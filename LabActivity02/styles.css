@@ -1,122 +1,160 @@
-* {
-    box-sizing: border-box;
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-header {
-    background: #222;
-    color: #fff;
-    padding: 1rem;
+/* Hero Section */
+.hero {
+    background-image: url('https://example.com/hero-shoe-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-nav ul li {
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d84315;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-.hero {
-    background-image: url('https://via.placeholder.com/1920x600');
+header nav a:hover {
+    color: #ff5722;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
     background-size: cover;
     background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+/* Shoe Images as Backgrounds */
+.card:nth-child(1) {
+    background-image: url('https://www.nike.com/ph/t/air-max-plus-shoes-dC1nzc.jpg');
+.card:nth-child(2) 
+{
+    background-image: url('https://www.nike.com/ph/a/jordan-1-chicago-lost-and-found-inspiration.jpg'); 
+}
+.card:nth-child(3) {
+    background-image: url('https://www.adidas.com.ph/ultraboost-5-shoes/ID8812.html.jpg');
+}
+.card img {
+    display: none; 
 }
 
-.hero-content p {
+.card h3 {
+    margin-top: 15px;
     font-size: 1.5rem;
-    margin: 20px 0;
 }
 
-.cta-button {
-    background: #ff5722;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    border: none;
-    cursor: pointer;
+.card p {
+    margin: 10px 0;
     font-size: 1rem;
 }
 
-.cta-button:hover {
-    background: #e64a19;
+.card button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-section {
-    padding: 40px 20px;
+.card button:hover {
+    background-color: #d84315;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
     padding: 20px;
+    font-size: 0.9rem;
 }
 
-.product-item {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.product-item h3 {
-    margin: 10px 0;
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero-content p {
-        font-size: 1.2rem;
+    .hero h1 {
+        font-size: 2rem;
     }
 
-    .products-grid {
-        grid-template-columns: 1fr;
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
     }
 }
