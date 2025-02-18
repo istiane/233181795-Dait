@@ -13,14 +13,14 @@ a {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://example.com/hero-shoe-image.jpg');
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -79,27 +79,32 @@ header nav a:hover {
 .card {
     width: 300px;
     margin: 20px;
-    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: white; 
     background-size: cover;
     background-position: center;
+    background-color: #f4f4f4; 
 }
 
 /* Shoe Images as Backgrounds */
 .card:nth-child(1) {
-    background-image: url('https://www.nike.com/ph/t/air-max-plus-shoes-dC1nzc.jpg');
-.card:nth-child(2) 
-{
-    background-image: url('https://www.nike.com/ph/a/jordan-1-chicago-lost-and-found-inspiration.jpg'); 
+    background-image: url('Air Max.jpg');
 }
+
+.card:nth-child(2) {
+    background-image: url('Jordan 1 Chicago.jpg'); 
+}
+
 .card:nth-child(3) {
-    background-image: url('https://www.adidas.com.ph/ultraboost-5-shoes/ID8812.html.jpg');
+    background-image: url('ultra boost.jpg');
 }
+
+/* Hide Image inside card */
 .card img {
-    display: none; 
+    display: none;
 }
 
 .card h3 {
@@ -130,7 +135,7 @@ header nav a:hover {
 /* Footer */
 footer {
     background-color: #333;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
