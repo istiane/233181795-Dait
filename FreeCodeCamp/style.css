@@ -1,3 +1,4 @@
+/* Coffee Business Website Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,17 +8,18 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f8f1e4;
-  color: #5c3d2e;
+  background-color: #f5ebe0;
+  color: #4b2e2e;
 }
 
 /* Header */
 header {
-  background: #8b5e3b;
+  background: #6f4e37;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 nav ul {
@@ -27,7 +29,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
@@ -38,12 +40,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc80;
+  color: #d2a679;
 }
 
 /* Hero Section */
 .hero {
-  background-image: url('https://via.placeholder.com/1920x600'); /* Replace with café-related image */
+  background-image: url('https://via.placeholder.com/1920x600'); /* Replace with coffee-related image */
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -55,66 +57,66 @@ nav ul li a:hover {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 20px 0;
 }
 
 .cta-button {
-  background: #d2691e;
+  background: #8b4513;
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-  background: #a0522d;
+  background: #5a3313;
 }
 
 /* Sections */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 h2 {
-  margin-bottom: 20px;
-  color: #6d4c41;
+  margin-bottom: 25px;
+  color: #3e2723;
 }
 
 /* Services Grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
 }
 
 .service-item {
-  background: #fff8e1;
-  padding: 20px;
+  background: #fff3e0;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .service-item h3 {
-  color: #5c3d2e;
-  margin-bottom: 10px;
+  color: #4b2e2e;
+  margin-bottom: 12px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
   }
 
   .hero-content p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
   }
 }
